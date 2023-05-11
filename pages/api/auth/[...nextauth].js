@@ -2,7 +2,7 @@ import NextAuth from "next-auth/next";
 import GoogleProviders from "next-auth/providers/google";
 import EmailProvider from "next-auth/providers/email";
 import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
-import clientPromise from "../../database/connectDB";
+import clientPromise from "../../../database/connectDB";
 export default NextAuth({
   // Configure one or more authentication providers
   providers: [
