@@ -52,6 +52,7 @@ const SignIn = () => {
   const handleSubmit = (e: Event) => {
     e.preventDefault();
     if (!email) return false;
+    console.log(email);
     signIn("email", { email, redirect: false });
   };
 
